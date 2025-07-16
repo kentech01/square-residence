@@ -85,9 +85,7 @@
                       >Facilities</a
                     >
                     <a href="#aboutus" class="nav-link w-nav-link">About</a>
-                    <a href="#contact-us" class="nav-link w-nav-link"
-                      >Contact</a
-                    >
+                    <a href="#footer" class="nav-link w-nav-link">Contact</a>
                   </div>
                 </div>
               </div>
@@ -573,7 +571,7 @@
         </div>
       </div>
     </section>
-    <section id="contact-us" class="section section-booking">
+    <section id="contact-us" class="section section-contact">
       <div class="hero-section-auto">
         <div class="container-facilities">
           <div class="accommodations-section-booking">
@@ -603,60 +601,58 @@
                   <div class="contact-form-holder">
                     <div class="contact-form-block w-form">
                       <form
-                        id="email-form"
-                        name="email-form"
+                        id="wf-form-Email"
+                        name="wf-form-Email"
+                        data-name="Email"
+                        method="get"
                         class="contact-us-form"
+                        data-wf-page-id="6852bf91d02682b2baa5c19a"
+                        data-wf-element-id="c103a75f-da44-9b03-465d-a933257ac2bd"
                       >
                         <div class="form-field-holder">
                           <input
-                            type="hidden"
-                            name="client_id"
-                            value="square"
-                          />
-                          <input
-                            name="name"
-                            type="text"
+                            class="text-field w-input"
+                            maxlength="256"
+                            name="Name"
+                            data-name="Name"
                             placeholder="Your name"
+                            type="text"
+                            id="Name"
+                            required=""
+                          /><input
                             class="text-field w-input"
-                            required
-                          />
-                          <input
-                            name="email"
-                            type="email"
+                            maxlength="256"
+                            name="Email"
+                            data-name="Email"
                             placeholder="Your email"
-                            class="text-field w-input"
-                            required
+                            type="email"
+                            id="Email"
+                            required=""
                           />
                         </div>
                         <textarea
-                          name="message"
-                          placeholder="Your message"
-                          class="text-field w-input"
-                          required
-                        ></textarea>
-
-                        <!-- Invisible reCAPTCHA widget -->
-                        <div
-                          id="recaptcha-container"
-                          class="g-recaptcha"
-                          data-sitekey="6LflQXQrAAAAAOMlxaNhkCzUzXCFovcmuZEzKa-Z"
-                          data-size="invisible"
-                          data-callback="onRecaptchaSuccess"
-                        ></div>
-
-                        <input
+                          id="field"
+                          name="field"
+                          maxlength="5000"
+                          data-name="Field"
+                          placeholder="Example Text"
+                          class="textarea w-input"
+                        ></textarea
+                        ><input
                           type="submit"
-                          value="Submit"
+                          data-wait="Please wait..."
                           class="submit-button w-button"
+                          value="Submit"
                         />
                       </form>
-
-                      <p
-                        id="success-message"
-                        style="display: none; color: green; margin-top: 20px"
-                      >
-                        Message sent successfully!
-                      </p>
+                      <div class="w-form-done">
+                        <div>Thank you! Your submission has been received!</div>
+                      </div>
+                      <div class="w-form-fail">
+                        <div>
+                          Oops! Something went wrong while submitting the form.
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -666,17 +662,21 @@
         </div>
       </div>
     </section>
-    <section class="section section-booking">
+    <section id="footer" class="section section-booking">
       <div class="navbar-line"></div>
       <div class="hero-section-auto">
         <div class="container-facilities">
           <div class="footer-section">
             <div class="contact-more-info">
               <div class="contact-info">
-                <div class="contact-info-text">
-                  squareconstruction.ul@gmail.com
-                </div>
-                <div class="contact-info-text">+382 69 747 411</div>
+                <a
+                  href="mailto:squareconstruction.ul@gmail.com"
+                  class="contact-info-text"
+                  >squareconstruction.ul@gmail.com</a
+                >
+                <a href="tel:+38269747411" class="contact-info-text"
+                  >+382 69 747 411</a
+                >
               </div>
               <div class="contact-info">
                 <div class="address-holder">

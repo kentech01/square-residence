@@ -9,13 +9,22 @@
   position: relative;
 }
 
-.section.rooms-section,
+.section.rooms-section {
+  background-color: var(--primary-color);
+}
+
 .section.section-booking {
   background-color: var(--primary-color);
+  display: block;
 }
 
 .section.rooms-details-section {
   background-color: var(--titel-color);
+}
+
+.section.section-contact {
+  background-color: var(--primary-color);
+  display: none;
 }
 
 .container {
@@ -620,6 +629,11 @@
   font-family: Archivo, sans-serif;
   font-size: 18px;
   line-height: 1.2;
+  text-decoration: none;
+}
+
+.contact-info-text:hover {
+  color: #c88603;
 }
 
 .links-holder {
@@ -1044,10 +1058,14 @@
 
 .thriolink {
   color: var(--white);
+  margin-right: 2px;
   font-family: Archivo, sans-serif;
   font-size: 16px;
   text-decoration: none;
-  margin-right: 5px;
+}
+
+.thriolink:hover {
+  color: #c88603;
 }
 
 .created-by {
